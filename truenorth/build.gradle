@@ -1,0 +1,27 @@
+// build.gradle (Groovy)
+plugins {
+    id 'java'
+    id 'net.neoforged.gradle' version '6.0.18' // use a 6.x that matches 21.8.x
+}
+
+group = 'com.yourname'
+version = '0.1.0'
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(21) }
+    withSourcesJar()
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.21.8'
+}
+
+dependencies {
+    // NeoForge 21.8.x (match your client; you had 21.8.47)
+    minecraft "net.neoforged:neoforge:21.8.47"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}

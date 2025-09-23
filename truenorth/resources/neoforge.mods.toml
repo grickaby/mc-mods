@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[9,)"
+license="MIT"
+
+[[mods]]
+modId="truenorth"
+version="${file.jarVersion}"
+displayName="TrueNorth"
+authors="Geoffrey"
+description="Minimal compass overlay that points to selected materials."
+
+[[dependencies.truenorth]]
+modId="neoforge"
+type="required"
+versionRange="[21.8,21.9)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.truenorth]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.8,1.21.9)"
+ordering="NONE"
+side="CLIENT"
