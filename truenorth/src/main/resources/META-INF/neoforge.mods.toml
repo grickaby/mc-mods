@@ -1,0 +1,22 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "truenorth"
+version = "0.7.1"
+displayName = "TrueNorth"
+authors = "grickaby"
+description = '''HUD overlay above the food/health bars that shows where ore is within +/- 5 blocks vertical, and 20 blocks horizontal'''
+
+[[dependencies.truenorth]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.8,22)"
+side = "CLIENT"
+
+[[dependencies.truenorth]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.8,1.21.9)"
+side = "CLIENT"

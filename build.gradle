@@ -1,0 +1,7 @@
+// root build has no plugins; we build only subprojects
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url = 'https://maven.neoforged.net/releases' }
+    }
+}

@@ -6,7 +6,7 @@ license="MIT"
 modId="truenorth"
 version="${file.jarVersion}"
 displayName="TrueNorth"
-authors="Geoffrey"
+authors="Geoffrey Rickaby"
 description="Minimal compass overlay that points to selected materials."
 
 [[dependencies.truenorth]]

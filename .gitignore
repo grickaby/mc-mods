@@ -1,0 +1,33 @@
+# ---- Gradle caches
+.gradle/
+**/.gradle/
+
+# ---- Build outputs (ignore everything under build/)
+**/build/**
+
+# Re-include built mod jars only
+!**/build/libs/
+!**/build/libs/*.jar
+
+# Optional: exclude sources/javadoc jars if they appear
+**/build/libs/*-sources.jar
+**/build/libs/*-javadoc.jar
+
+# ---- Keep build scripts + wrapper tracked
+!build.gradle
+!settings.gradle
+!gradle.properties
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+
+# ---- IDE / OS noise
+.idea/
+*.iml
+.vscode/
+bin/
+out/
+*.log
+.DS_Store
+Thumbs.db
